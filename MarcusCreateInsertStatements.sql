@@ -1,11 +1,3 @@
-/* 
-SQL Script (.sql file) containing the DDL SQL statements to create and
-populate the tables with dummy data. I should be able to run this script in Oracle
-(or SQL Server if you approve with me ahead of time) to create the full set of
-database tables. In other words, this single script should contain:
-a. The set of CREATE table statements.
-*/
-
 /*
 CREATE table COMPANY
 */
@@ -142,16 +134,8 @@ CREATE TABLE TIMECARD
                 CONSTRAINT FK_TimecardPayScale 	FOREIGN KEY (ProjectId, JobCode) REFERENCES PAY_SCALE (ProjectId,JobCode),
                 CONSTRAINT FK_TimecardEmployee 	FOREIGN KEY (EmployeeId) REFERENCES EMPLOYEE (EmployeeId)
                 );
-
-
+		
 /*
-SQL Script (.sql file) containing the DDL SQL statements to create and
-populate the tables with dummy data. I should be able to run this script in Oracle
-(or SQL Server if you approve with me ahead of time) to create the full set of
-database tables. In other words, this single script should contain:
-b. The set of INSERT statemetns to add dummy data*/
-/*
-
 INSERTs for COMPANY table (some examples taken from Exhibits)
 */
 
